@@ -1,0 +1,29 @@
+.kt-header {
+  background-image: -webkit-linear-gradient(30deg, $secondary, $primary);
+  background-image: -moz-linear-gradient(30deg,$secondary, $primary);
+  background-image: -ms-linear-gradient(30deg, $secondary, $primary);
+  background-image: -o-linear-gradient(30deg, $secondary, $primary);
+  background-image: linear-gradient(30deg, $secondary, $primary);
+  .kt-header__brand-logo {
+    a {
+      height: 50px;
+      img {
+        height:100%;
+      }
+    }
+  }
+
+  .kt-header__topbar {
+    .kt-header__topbar-item.kt-header__topbar-item--user .kt-header__topbar-welcome {
+      color: $white;
+    }
+    .kt-header__topbar-item.kt-header__topbar-item--langs .dropdown-menu .kt-nav__link-icon img {
+      height: 18px;
+      width: 18px;
+    }
+    .kt-header__topbar-item.kt-header__topbar-item--langs .kt-header__topbar-icon img {
+      height: 22px;
+      width: 22px;
+    }
+  }
+}

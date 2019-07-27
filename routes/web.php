@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('auth.login');
+})->middleware('guest');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('switch-lang', 'LanguageController@switchLang')->name('switch-lang');
